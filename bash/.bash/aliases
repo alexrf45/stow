@@ -32,10 +32,10 @@ alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock 
 alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
 
 #dot files
-alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER'
-alias status='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER status'
-alias commit='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER commit -am'
-alias push='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER push'
+alias dot='/usr/bin/git --git-dir=/home/$USER/dotfiles/.git --work-tree=/home/$USER/dotfiles'
+alias status='/usr/bin/git --git-dir=/home/$USER/dotfiles/.git --work-tree=/home/$USER/dotfiles status'
+alias commit='/usr/bin/git --git-dir=/home/$USER/dotfiles/.git --work-tree=/home/$USER/dotfiles commit -am'
+alias push='/usr/bin/git --git-dir=/home/$USER/dotfiles/.git --work-tree=/home/$USER/dotfiles push'
 
 
 
