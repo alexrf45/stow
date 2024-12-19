@@ -1,0 +1,23 @@
+#kubernetes
+#
+
+alias k='kubectl'
+alias ka='kubectl apply'
+alias kaf='kubectl apply -f'
+alias kc='kubectl create'
+alias create='kubectl create -f'
+
+alias kd='kubectl delete'
+alias kg='kubectl get'
+alias kgns='kubectl get ns'
+alias kgn='kubectl get nodes'
+alias kl='kubectl logs'
+alias kgp='kubectl get pods'
+alias kcctx='k config get-contexts -o name'
+alias ksercrets='kubectl describe secrets'
+
+#argocli
+
+alias argo='docker run -it --rm --name argo-cd -v $HOME/.kube:/.kube -v $HOME/.argocd/config:/.argocd/config bitnami/argo-cd:latest'
+
+

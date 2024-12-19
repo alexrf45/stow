@@ -1,0 +1,34 @@
+alias aegis-dev='tmuxp load $HOME/.config/tmuxp/aegis.yaml'
+
+#lazydocker
+alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /yourpath:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
+
+#docker
+alias d='docker'
+alias dimls='docker image ls'
+alias dim='docker image'
+alias dc='docker container'
+alias dnt='docker network'
+alias dnuke="docker stop \$(docker ps -a -q); docker rm -f \$(docker ps -a -q); docker rmi -f \$(docker images -a -q); docker volume rm -f \$(docker volume ls -q)"
+
+alias portainer='docker run --name portainer -p 9000:9000 -d -v "/var/run/docker.sock:/var/run/docker.sock" portainer/portainer-ce:latest'
+alias portainerstop='docker stop portainer'
+alias portainerstart='docker start portainer'
+
+
+#docker build
+alias build='docker build'
+
+#docker compose
+alias d-up='docker-compose up -d'
+alias d-down='docker-compose down'
+
+#python3
+
+alias py-virt='python3 -m venv .venv && source .venv/bin/activate'
+alias freeze='pip freeze > requirements.txt'
+alias py-install='pip install -r requirements.txt'
+alias py-list='pipx list | grep package'
+
+
+

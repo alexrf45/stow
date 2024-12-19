@@ -1,0 +1,67 @@
+#arch commands
+alias :r='. ~/.bashrc'
+alias update='sudo pacman -Syyu'
+alias i='sudo pacman -S'
+alias home='cd ~'
+alias lock='cmatrix -r'
+alias vim='nvim'
+alias v='nvim'
+alias c='clear'
+alias py='python3'
+alias weather='curl https://wttr.in'
+alias q='exit'
+alias pdf='zathura'
+alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
+alias t-conf='nvim $HOME/.tmux.conf'
+# temp notes
+alias notes='docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable'
+
+#tmux
+alias t='tmux new -f ~/.tmux.conf -s $1'
+
+#networking
+alias public='curl wtfismyip.com/text'
+
+# temp tailscale connection
+alias tailscale='docker run -d --name=tailscaled -v /var/lib:/var/lib -v /dev/net/tun:/dev/net/tun --network=host --cap-add=NET_ADMIN --cap-add=NET_RAW tailscale/tailscale'
+alias tailup='docker start tailscaled'
+alias taildown='docker stop tailscaled'
+alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock status'
+
+#note backup
+alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
+
+#dot files
+alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER'
+alias status='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER status'
+alias commit='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER commit -am'
+alias push='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER push'
+
+
+
+#git
+alias g='git'
+alias ga='git add'
+alias gaa='git add --all'
+alias gb='git branch'
+alias gbd='git branch -d'
+alias gca='git commit -a'
+alias gcb='git checkout -b'
+alias gc='git clone'
+alias gcl='git clone --recurse-modules'
+alias clean='git reset --hard && git clean -dfxx'
+alias checkout='git checkout'
+alias gd='git diff'
+alias gf='git fetch'
+alias gfo='git fetch origin'
+alias gpl='git pull'
+alias gm='git merge'
+alias gp='git push'
+alias gs='git status'
+alias gt='git tag'
+alias gptf='git push --follow-tags'
+
+
+alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
+alias gl='glog --graph'
+alias gla='gl --all'
