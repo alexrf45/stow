@@ -12,3 +12,5 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = /home/fr3d/.config/git/allowed_signers
+[maintenance]
+	repo = /home/fr3d/home-lab

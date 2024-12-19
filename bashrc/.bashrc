@@ -1,5 +1,7 @@
 shopt -s histappend
 shopt -s checkwinsize
+shopt -s cdspell
+ulimit -c 0
 HISTFILE="$HOME/.history"
 HISTSIZE=1000
 HISTFILESIZE=2000
