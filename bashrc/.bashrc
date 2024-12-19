@@ -18,7 +18,7 @@ bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
 
 PROMPT_COMMAND='PS1_CMD1=$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)'
-PS1='\[\e[93;2;3m\]${AWS_VAULT}\[\e[0m\] \n\[\e[92;1m\]${PS1_CMD1}\[\e[0m\] \[\e[95m\]\W\[\e[0m\] →  '
+PS1='\[\e[93;2;3m\]${AWS_VAULT}\[\e[0m\] \n\[\e[92;1m\]${PS1_CMD1}\[\e[0m\] \[\e[95m\]\W\[\e[0m\]  '
 
 complete -C '/usr/local/bin/aws_completer' aws
 
