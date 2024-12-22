@@ -15,6 +15,8 @@ export AWS_PAGER=
 export AWS_CLI_AUTO_PROMPT=on-partial
 export GPG_TTY=$(tty)
 
+source "$HOME/.talos/completion.bash.inc"
+
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=fg:-1,fg+:#d0d0d0,bg:-1,bg+:#262626
   --color=hl:#5fb079,hl+:#43fb00,info:#afaf87,marker:#87ff00
