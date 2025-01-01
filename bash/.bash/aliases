@@ -27,10 +27,9 @@ alias t='tmux new -f ~/.tmux.conf -s $1'
 alias public='curl wtfismyip.com/text'
 
 # temp tailscale connection
-alias tailscale='docker run -d --name=tailscaled -v /var/lib:/var/lib -v /dev/net/tun:/dev/net/tun --network=host --cap-add=NET_ADMIN --cap-add=NET_RAW tailscale/tailscale'
-alias tailup='docker start tailscaled'
-alias taildown='docker stop tailscaled'
-alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock status'
+# alias tailscale='docker run -d --name=tailscaled -v /var/lib:/var/lib -v /dev/net/tun:/dev/net/tun --network=host --cap-add=NET_ADMIN --cap-add=NET_RAW tailscale/tailscale'
+# alias tailup='docker start tailscaled'
+# alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock status'
 
 #note backup
 alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
