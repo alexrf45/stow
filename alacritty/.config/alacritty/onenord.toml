@@ -1,0 +1,13 @@
+# Put the following lines in your ~/.config/alacritty/alacritty.toml
+
+[colors.primary]
+background = "#2a303c"
+foreground = "#bfc5d0"
+
+[colors.cursor]
+text = "#2a303c"
+cursor = "#bfc5d0"
+
+[colors.selection]
+background = "#434c5e"
+text = "#bfc5d0"
