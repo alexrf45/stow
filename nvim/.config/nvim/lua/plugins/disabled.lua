@@ -4,6 +4,7 @@ return {
   { "rcarriga/nvim-notify", enabled = false },
   { "folke.tokyonight", enabled = false },
   { "catppuccin/nvim", enabled = false },
+  { "echasnovski/mini.ai", enabled = false },
 
   -- temporarily disabled due to empty file issue
   -- { "nvim-navic", enabled = false },

@@ -9,7 +9,7 @@ return {
 
   config = function()
     -- Set Brave Browser as the default browser
-    vim.g.mkdp_browser = "Brave Browser"
+    vim.g.mkdp_browser = "/usr/bin/brave"
   end,
   ft = { "markdown" },
 }
