@@ -7,9 +7,5 @@ return {
     vim.g.mkdp_filetypes = { "markdown" }
   end,
 
-  config = function()
-    -- Set Brave Browser as the default browser
-    vim.g.mkdp_browser = "/usr/bin/brave"
-  end,
   ft = { "markdown" },
 }

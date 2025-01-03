@@ -36,4 +36,4 @@ ssh-add ~/.ssh/vps >/dev/null 2>&1
 eval "$(fzf --bash)"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-#eval "$(starship init bash)"
+eval "$(starship init bash)"
